@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Điều khoản dịch vụ — Thành Đi Đánh Cầu TikTok</title>
+<style>
+  :root{
+    --bg:#f7f5f1; --surface:#ffffff; --border:#e3ddd2;
+    --text:#211f1c; --text-muted:#5b564c;
+    --accent:#3c6f5e; --accent-soft:#e4ece8;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#17181a; --surface:#1f2123; --border:#33352f;
+      --text:#ece9e2; --text-muted:#a8a496;
+      --accent:#7fb59e; --accent-soft:#26332c;
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg); color:var(--text);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    padding-inline:20px; line-height:1.65;
+  }
+  h1,h2{font-family:"Source Serif 4","Georgia",serif; text-wrap:balance;}
+  .page{max-width:640px;margin-inline:auto;padding-block:32px 64px;}
+  nav{
+    display:flex; gap:6px; flex-wrap:wrap;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:999px; padding:6px; margin-bottom:40px;
+  }
+  nav a{
+    flex:1; text-align:center; padding:9px 14px; border-radius:999px;
+    font-size:13.5px; font-weight:500; color:var(--text-muted); text-decoration:none;
+  }
+  nav a.active{background:var(--accent-soft); color:var(--accent);}
+  h1{font-size:clamp(26px,5vw,32px); font-weight:600; margin:0 0 6px;}
+  .updated{color:var(--text-muted); font-size:13.5px; margin:0 0 36px;}
+  section{margin-bottom:30px;}
+  h3{font-size:17px; font-weight:600; margin:0 0 10px;}
+  p{margin:0 0 14px; max-width:65ch;}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin-bottom:8px; max-width:60ch;}
+  .contact{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:20px 22px;
+  }
+  .contact-row{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
+  .contact-label{color:var(--text-muted); font-size:13.5px; min-width:64px;}
+  .contact-value{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:14px;}
+</style>
+</head>
+<body>
+  <div class="page">
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="terms.html" class="active">Điều khoản dịch vụ</a>
+      <a href="privacy.html">Chính sách quyền riêng tư</a>
+    </nav>
+
+    <h1>Điều khoản dịch vụ</h1>
+    <p class="updated">Cập nhật lần cuối: 30 tháng 9, 2026</p>
+
+    <section>
+      <h3>Phạm vi áp dụng</h3>
+      <p>
+        Điều khoản này áp dụng cho một công cụ tự động hóa cá nhân, chỉ được vận hành bởi
+        chính chủ sở hữu, phục vụ đúng một tài khoản TikTok của người đó. Công cụ không mở
+        cho công chúng sử dụng.
+      </p>
+    </section>
+
+    <section>
+      <h3>Mô tả dịch vụ</h3>
+      <p>
+        Công cụ tự động tải video mà người vận hành đã tự quay và tự dựng lên tài khoản
+        TikTok của chính họ, vào thời điểm họ tự lên lịch trước trong một trang tính riêng.
+        Không có bước can thiệp thủ công ở giữa ngoài việc chuẩn bị video và điền lịch.
+      </p>
+    </section>
+
+    <section>
+      <h3>Trách nhiệm của người vận hành</h3>
+      <ul>
+        <li>Chỉ đăng nội dung do chính mình sở hữu hoặc có toàn quyền sử dụng.</li>
+        <li>Tuân thủ Điều khoản Dịch vụ và Nguyên tắc Cộng đồng của TikTok đối với mọi nội dung được đăng.</li>
+        <li>Tự chịu trách nhiệm về nội dung, không đổ lỗi cho công cụ tự động hóa.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Không bảo đảm</h3>
+      <p>
+        Công cụ được xây dựng và vận hành cho mục đích cá nhân, không đi kèm bảo đảm về
+        tính sẵn sàng liên tục hay không có lỗi. Người vận hành có thể tạm dừng, thay đổi,
+        hoặc ngừng công cụ bất kỳ lúc nào mà không cần báo trước.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h3 style="margin-bottom:14px;">Liên hệ</h3>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">thanhnm.trader@gmail.com</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
