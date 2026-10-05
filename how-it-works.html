@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How It Works - Thành Đi Đánh Cầu Video Posting Tool</title>
+<meta name="description" content="Step by step: how the posting tool plans, authorizes and publishes videos to TikTok.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="favicon.png" alt="Thành Đi Đánh Cầu logo"><span>Thành Đi Đánh Cầu</span></a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html" aria-current="page">How it works</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="doc-head">
+    <h1>How it works</h1>
+    <p class="lead" style="margin:8px 0 0;">From a finished video to a published TikTok post, in five steps.</p>
+  </div>
+
+  <section>
+    <ol class="steps">
+      <li>
+        <div>
+          <h3>Prepare the video</h3>
+          <p>The creator edits a short 9:16 clip and saves it in a private cloud folder.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Plan the schedule</h3>
+          <p>A spreadsheet row holds the file name, publish date and time, and the caption. Two slots per day can be filled in automatically, or typed by hand.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Authorize once</h3>
+          <p>The creator signs in with TikTok through Login Kit and approves the requested scopes. The resulting tokens are stored privately and refreshed when they expire.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Publish at the planned time</h3>
+          <p>The tool reads the creator's allowed privacy options, starts a Direct Post with the caption, uploads the video file, then checks the publish status until TikTok reports it complete.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Record the result</h3>
+          <p>The publish ID and time are written back to the spreadsheet and the row is marked as published, so the same video is never posted twice.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>TikTok API calls used</h2>
+    <p class="lead">These are the only TikTok endpoints the tool calls.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Endpoint</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>/v2/oauth/token/</code></td><td>Exchange the authorization code for tokens and refresh the access token.</td></tr>
+          <tr><td><code>/v2/post/publish/creator_info/query/</code></td><td>Read the creator's allowed privacy options before posting.</td></tr>
+          <tr><td><code>/v2/post/publish/video/init/</code></td><td>Start a Direct Post with the caption and file size.</td></tr>
+          <tr><td>Upload URL returned by <code>init</code></td><td>Send the video file to TikTok.</td></tr>
+          <tr><td><code>/v2/post/publish/status/fetch/</code></td><td>Check whether the post has been published.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>What the tool does not do</h2>
+    <ul>
+      <li>It does not read, scrape or store other people's videos, comments or profiles.</li>
+      <li>It does not like, follow, comment or send messages on the creator's behalf.</li>
+      <li>It does not post content that the creator did not make.</li>
+      <li>It does not collect data about viewers or followers.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <div class="contact">
+      <div class="contact-row"><span class="contact-label">Email</span><span class="contact-value">thanhnm.trader@gmail.com</span></div>
+      <div class="contact-row"><span class="contact-label">TikTok</span><span class="contact-value">@thanhdidanhcau</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Thành Đi Đánh Cầu</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

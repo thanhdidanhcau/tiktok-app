@@ -1,95 +1,123 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thành Đi Đánh Cầu — TikTok</title>
-<style>
-  :root{
-    --bg:#f7f5f1; --surface:#ffffff; --border:#e3ddd2;
-    --text:#211f1c; --text-muted:#5b564c;
-    --accent:#3c6f5e; --accent-soft:#e4ece8;
-    color-scheme:light;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#17181a; --surface:#1f2123; --border:#33352f;
-      --text:#ece9e2; --text-muted:#a8a496;
-      --accent:#7fb59e; --accent-soft:#26332c;
-      color-scheme:dark;
-    }
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--bg); color:var(--text);
-    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    padding-inline:20px; line-height:1.65;
-  }
-  h1{font-family:"Source Serif 4","Georgia",serif; text-wrap:balance;}
-  .page{max-width:640px;margin-inline:auto;padding-block:32px 64px;}
-  nav{
-    display:flex; gap:6px; flex-wrap:wrap;
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:999px; padding:6px; margin-bottom:40px;
-  }
-  nav a{
-    flex:1; text-align:center; padding:9px 14px; border-radius:999px;
-    font-size:13.5px; font-weight:500; color:var(--text-muted); text-decoration:none;
-  }
-  nav a.active{background:var(--accent-soft); color:var(--accent);}
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:8px;
-    font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
-    color:var(--accent); background:var(--accent-soft);
-    padding:5px 12px; border-radius:999px; margin-bottom:20px;
-  }
-  h1{font-size:clamp(28px,5vw,36px); font-weight:600; margin:0 0 10px;}
-  .subtitle{color:var(--text-muted); font-size:16px; margin:0 0 40px; max-width:56ch;}
-  .app-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:12px;
-    padding:16px 18px; display:grid; grid-template-columns:auto 1fr; gap:4px 18px; font-size:14px;
-  }
-  .app-card dt{color:var(--text-muted);} .app-card dd{margin:0;}
-  section{margin-top:30px;}
-  h3{font-size:17px; font-weight:600; margin:0 0 10px;}
-  p{margin:0 0 14px; max-width:65ch;}
-</style>
+<title>Thành Đi Đánh Cầu Video Posting Tool</title>
+<meta name="description" content="A tool that publishes the creator's own badminton highlight videos to their own TikTok account on a schedule.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page">
-    <nav>
-      <a href="index.html" class="active">Trang chủ</a>
-      <a href="terms.html">Điều khoản dịch vụ</a>
-      <a href="privacy.html">Chính sách quyền riêng tư</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="favicon.png" alt="Thành Đi Đánh Cầu logo"><span>Thành Đi Đánh Cầu</span></a>
+    <nav class="main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
     </nav>
-
-    <span class="eyebrow">Công cụ cá nhân</span>
-    <h1>Thành Đi Đánh Cầu — TikTok</h1>
-    <p class="subtitle">
-      Công cụ tự động đăng video Reel/clip cầu lông lên tài khoản TikTok cá nhân,
-      theo lịch định sẵn trong Google Sheet.
-    </p>
-
-    <dl class="app-card">
-      <dt>Chủ sở hữu</dt><dd>Cá nhân, chủ tài khoản TikTok được cấu hình trong công cụ</dd>
-      <dt>Loại</dt><dd>Công cụ tự động hóa nội bộ, không công khai, không có người dùng khác</dd>
-      <dt>Nền tảng</dt><dd>Google Apps Script + TikTok Content Posting API</dd>
-    </dl>
-
-    <section>
-      <h3>Công cụ này là gì</h3>
-      <p>
-        Đây là một script chạy trên Google Apps Script, chỉ phục vụ đúng một tài khoản TikTok
-        do người vận hành sở hữu. Script đọc lịch đăng từ một Google Sheet riêng, lấy video từ
-        một thư mục Google Drive riêng, rồi đăng video lên TikTok vào đúng thời điểm đã lên lịch,
-        thông qua TikTok Content Posting API chính thức.
-      </p>
-      <p>
-        Công cụ không có giao diện công khai, không có quy trình đăng ký cho người dùng khác,
-        và không được phân phối cho ai ngoài người vận hành.
-      </p>
-    </section>
   </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <img class="hero-logo" src="favicon.png" alt="Thành Đi Đánh Cầu logo">
+    <div>
+      <span class="eyebrow">Creator tool</span>
+      <h1>Publish badminton highlights to TikTok on schedule</h1>
+      <p>
+        The Thành Đi Đánh Cầu posting tool lets the channel owner plan short vertical videos in a
+        spreadsheet and publishes them to their own TikTok account at the planned time, using
+        TikTok's official Content Posting API.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="how-it-works.html">See how it works</a>
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>What the tool does</h2>
+    <p class="lead">
+      Thành Đi Đánh Cầu is a recreational badminton channel. It shares short rally highlights
+      recorded at weekly games, usually 10 to 30 seconds long, in 9:16 vertical format.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Plan in a spreadsheet</h3>
+        <p>Every video gets one row: file name, publish date and time, and caption. The next days' slots can be filled in with one click.</p>
+      </div>
+      <div class="card">
+        <h3>Publish through the official API</h3>
+        <p>At the planned time the tool uploads the video file and publishes it to the creator's own profile with Direct Post.</p>
+      </div>
+      <div class="card">
+        <h3>Keep a clear record</h3>
+        <p>After publishing, the tool checks the status with TikTok and writes the result back to the sheet, so the creator always sees what is live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>TikTok integration</h2>
+    <p class="lead">The tool requests only the products and scopes below.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Product</th><th>Scope</th><th>How it is used</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Login Kit</td>
+            <td><code>user.info.basic</code></td>
+            <td>One-time authorization so the tool can act for the creator's own TikTok account.</td>
+          </tr>
+          <tr>
+            <td>Content Posting API (Direct Post)</td>
+            <td><code>video.publish</code></td>
+            <td>Publishes the creator's own video to their own profile at the scheduled time.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">The <code>video.upload</code> scope is bundled with the Content Posting API product. This tool does not use it.</p>
+  </section>
+
+  <section>
+    <h2>Your data</h2>
+    <ul>
+      <li>Authorization tokens are kept in private storage that only the creator's Google account can open.</li>
+      <li>The tool does not read or collect data about viewers, followers or other TikTok users.</li>
+      <li>Nothing is sold or shared with third parties.</li>
+      <li>Access can be revoked at any time from TikTok settings.</li>
+    </ul>
+    <p>Read the full <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="contact-row"><span class="contact-label">Email</span><span class="contact-value">thanhnm.trader@gmail.com</span></div>
+      <div class="contact-row"><span class="contact-label">TikTok</span><span class="contact-value">@thanhdidanhcau</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Thành Đi Đánh Cầu</span>
+    <nav>
+      <a href="how-it-works.html">How it works</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

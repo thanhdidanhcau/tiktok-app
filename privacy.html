@@ -1,125 +1,105 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chính sách quyền riêng tư — Thành Đi Đánh Cầu TikTok</title>
-<style>
-  :root{
-    --bg:#f7f5f1; --surface:#ffffff; --border:#e3ddd2;
-    --text:#211f1c; --text-muted:#5b564c;
-    --accent:#3c6f5e; --accent-soft:#e4ece8;
-    color-scheme:light;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#17181a; --surface:#1f2123; --border:#33352f;
-      --text:#ece9e2; --text-muted:#a8a496;
-      --accent:#7fb59e; --accent-soft:#26332c;
-      color-scheme:dark;
-    }
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--bg); color:var(--text);
-    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    padding-inline:20px; line-height:1.65;
-  }
-  h1,h2{font-family:"Source Serif 4","Georgia",serif; text-wrap:balance;}
-  .page{max-width:640px;margin-inline:auto;padding-block:32px 64px;}
-  nav{
-    display:flex; gap:6px; flex-wrap:wrap;
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:999px; padding:6px; margin-bottom:40px;
-  }
-  nav a{
-    flex:1; text-align:center; padding:9px 14px; border-radius:999px;
-    font-size:13.5px; font-weight:500; color:var(--text-muted); text-decoration:none;
-  }
-  nav a.active{background:var(--accent-soft); color:var(--accent);}
-  h1{font-size:clamp(26px,5vw,32px); font-weight:600; margin:0 0 6px;}
-  .updated{color:var(--text-muted); font-size:13.5px; margin:0 0 36px;}
-  section{margin-bottom:30px;}
-  h3{font-size:17px; font-weight:600; margin:0 0 10px;}
-  p{margin:0 0 14px; max-width:65ch;}
-  ul{margin:0 0 14px; padding-left:20px;}
-  li{margin-bottom:8px; max-width:60ch;}
-  strong{color:var(--text);}
-  .contact{
-    background:var(--surface); border:1px solid var(--border); border-radius:12px;
-    padding:20px 22px;
-  }
-  .contact-row{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
-  .contact-label{color:var(--text-muted); font-size:13.5px; min-width:64px;}
-  .contact-value{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:14px;}
-</style>
+<title>Privacy Policy - Thành Đi Đánh Cầu Video Posting Tool</title>
+<meta name="description" content="Privacy Policy for the Thành Đi Đánh Cầu video posting tool.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page">
-    <nav>
-      <a href="index.html">Trang chủ</a>
-      <a href="terms.html">Điều khoản dịch vụ</a>
-      <a href="privacy.html" class="active">Chính sách quyền riêng tư</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="favicon.png" alt="Thành Đi Đánh Cầu logo"><span>Thành Đi Đánh Cầu</span></a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
     </nav>
-
-    <h1>Chính sách quyền riêng tư</h1>
-    <p class="updated">Cập nhật lần cuối: 30 tháng 9, 2026</p>
-
-    <section>
-      <h3>Dữ liệu được truy cập</h3>
-      <p>Công cụ truy cập đúng các loại dữ liệu sau, tất cả đều thuộc sở hữu của người vận hành:</p>
-      <ul>
-        <li><strong>Access token và refresh token TikTok</strong>, cấp qua TikTok Login Kit, dùng để đăng nội dung thay mặt tài khoản.</li>
-        <li><strong>Tệp video và trang tính lịch đăng</strong> trong Google Drive/Sheets riêng của người vận hành.</li>
-        <li><strong>Trạng thái xử lý video</strong> mà TikTok trả về sau khi đăng, chỉ để xác nhận đăng thành công.</li>
-      </ul>
-      <p>Công cụ không thu thập dữ liệu từ người xem video, người theo dõi tài khoản, hay bất kỳ bên thứ ba nào khác.</p>
-    </section>
-
-    <section>
-      <h3>Cách dữ liệu được sử dụng</h3>
-      <p>
-        Dữ liệu trên chỉ được dùng để đăng video mà người vận hành đã tự quay, tự dựng, lên
-        chính tài khoản TikTok của họ, vào đúng thời điểm đã lên lịch. Không dùng cho quảng cáo,
-        phân tích hành vi, hay bất kỳ mục đích nào khác.
-      </p>
-    </section>
-
-    <section>
-      <h3>Lưu trữ và bảo mật</h3>
-      <p>
-        Access token và refresh token được lưu trong Script Properties của Google Apps Script —
-        kho lưu trữ riêng tư chỉ tài khoản Google của người vận hành truy cập được, không hiển
-        thị công khai, không nằm trong mã nguồn hay trang tính.
-      </p>
-    </section>
-
-    <section>
-      <h3>Chia sẻ dữ liệu</h3>
-      <p>
-        Công cụ không bán, không chia sẻ, không chuyển giao dữ liệu cho bên thứ ba. Dữ liệu
-        chỉ di chuyển giữa Google Drive/Sheets của người vận hành và API chính thức của TikTok,
-        để thực hiện đúng hành động đăng bài đã được ủy quyền.
-      </p>
-    </section>
-
-    <section>
-      <h3>Quyền của người vận hành</h3>
-      <p>
-        Người vận hành có thể thu hồi quyền truy cập bất kỳ lúc nào tại TikTok &rarr; Cài đặt
-        &amp; quyền riêng tư &rarr; Bảo mật &rarr; Ứng dụng và trang web đã kết nối, hoặc bằng
-        cách xóa token khỏi Script Properties. Sau khi thu hồi, công cụ ngừng đăng bài ngay lập tức.
-      </p>
-    </section>
-
-    <section class="contact">
-      <h3 style="margin-bottom:14px;">Liên hệ</h3>
-      <div class="contact-row">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">thanhnm.trader@gmail.com</span>
-      </div>
-    </section>
   </div>
+</header>
+
+<main class="wrap">
+  <div class="doc-head">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 5, 2026 &middot; Cập nhật lần cuối: 5 tháng 10, 2026</p>
+  </div>
+
+  <section class="lang" lang="en">
+    <h2>English</h2>
+
+    <h3>Data the tool accesses</h3>
+    <p>The tool accesses only the following, all of which belong to its operator:</p>
+    <ul>
+      <li><strong>TikTok access and refresh tokens</strong>, issued through TikTok Login Kit, used to publish on behalf of the operator's own account.</li>
+      <li><strong>Video files and the schedule spreadsheet</strong> in the operator's private cloud storage.</li>
+      <li><strong>Publish status</strong> returned by TikTok after a post, used only to confirm that publishing succeeded.</li>
+    </ul>
+    <p>The tool does not collect data about viewers, followers or any other TikTok user.</p>
+
+    <h3>How the data is used</h3>
+    <p>The data is used only to publish videos that the operator made, to the operator's own TikTok account, at the scheduled time. It is not used for advertising, profiling or any other purpose.</p>
+
+    <h3>Storage and security</h3>
+    <p>Tokens are stored in a private store that only the operator's Google account can open. They are not shown publicly and are not part of the source code or the spreadsheet.</p>
+
+    <h3>Sharing</h3>
+    <p>Nothing is sold, shared or transferred to third parties. Data moves only between the operator's own cloud storage and TikTok's official API, to carry out the authorized publishing action.</p>
+
+    <h3>Retention, revocation and deletion</h3>
+    <p>Tokens are kept only while the tool is in use. The operator can revoke access at any time from the connected-apps section of TikTok settings, or by deleting the stored tokens. After that the tool can no longer post. The tool holds no personal data about any other person, so there is nothing further to delete.</p>
+
+    <h3>Contact</h3>
+    <div class="contact">
+      <div class="contact-row"><span class="contact-label">Email</span><span class="contact-value">thanhnm.trader@gmail.com</span></div>
+    </div>
+  </section>
+
+  <section class="lang" lang="vi">
+    <h2>Tiếng Việt</h2>
+
+    <h3>Dữ liệu được truy cập</h3>
+    <p>Công cụ chỉ truy cập các loại dữ liệu sau, tất cả đều thuộc sở hữu của người vận hành:</p>
+    <ul>
+      <li><strong>Access token và refresh token TikTok</strong>, cấp qua TikTok Login Kit, dùng để đăng nội dung thay mặt tài khoản của chính người vận hành.</li>
+      <li><strong>Tệp video và trang tính lịch đăng</strong> trong kho lưu trữ đám mây riêng của người vận hành.</li>
+      <li><strong>Trạng thái đăng</strong> mà TikTok trả về sau khi đăng, chỉ để xác nhận đăng thành công.</li>
+    </ul>
+    <p>Công cụ không thu thập dữ liệu về người xem, người theo dõi hay bất kỳ người dùng TikTok nào khác.</p>
+
+    <h3>Cách dữ liệu được sử dụng</h3>
+    <p>Dữ liệu chỉ được dùng để đăng video do người vận hành tự làm lên chính tài khoản TikTok của họ, vào đúng thời điểm đã lên lịch. Không dùng cho quảng cáo, phân tích hành vi hay mục đích nào khác.</p>
+
+    <h3>Lưu trữ và bảo mật</h3>
+    <p>Token được lưu trong kho lưu trữ riêng tư mà chỉ tài khoản Google của người vận hành mở được, không hiển thị công khai, không nằm trong mã nguồn hay trang tính.</p>
+
+    <h3>Chia sẻ dữ liệu</h3>
+    <p>Không bán, không chia sẻ, không chuyển giao dữ liệu cho bên thứ ba. Dữ liệu chỉ di chuyển giữa kho lưu trữ đám mây của người vận hành và API chính thức của TikTok, để thực hiện đúng hành động đăng bài đã được ủy quyền.</p>
+
+    <h3>Lưu giữ, thu hồi và xóa dữ liệu</h3>
+    <p>Token chỉ được giữ trong thời gian công cụ còn được sử dụng. Người vận hành có thể thu hồi quyền truy cập bất kỳ lúc nào ở mục ứng dụng đã kết nối trong cài đặt TikTok, hoặc bằng cách xóa token đã lưu; sau đó công cụ không đăng bài được nữa. Công cụ không lưu dữ liệu cá nhân của người nào khác nên không có gì thêm cần xóa.</p>
+
+    <h3>Liên hệ</h3>
+    <div class="contact">
+      <div class="contact-row"><span class="contact-label">Email</span><span class="contact-value">thanhnm.trader@gmail.com</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Thành Đi Đánh Cầu</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
